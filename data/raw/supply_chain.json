@@ -1,0 +1,11 @@
+[
+  { "buyer": "C003", "supplier": "S101", "tier": 2, "relationship": "raw_materials", "commodity": "cobalt, tantalum" },
+  { "buyer": "C003", "supplier": "S102", "tier": 1, "relationship": "assembly", "commodity": "circuit boards" },
+  { "buyer": "S102", "supplier": "S101", "tier": 1, "relationship": "raw_materials", "commodity": "tantalum capacitors" },
+  { "buyer": "C002", "supplier": "S103", "tier": 1, "relationship": "freight", "commodity": "diesel road haulage" },
+  { "buyer": "C004", "supplier": "S104", "tier": 1, "relationship": "ingredients", "commodity": "soy, palm derivatives" },
+  { "buyer": "C005", "supplier": "S105", "tier": 1, "relationship": "raw_materials", "commodity": "structural steel" },
+  { "buyer": "C005", "supplier": "S101", "tier": 2, "relationship": "raw_materials", "commodity": "specialty alloys" },
+  { "buyer": "C001", "supplier": "S105", "tier": 2, "relationship": "raw_materials", "commodity": "turbine steel" },
+  { "buyer": "C002", "supplier": "S105", "tier": 2, "relationship": "raw_materials", "commodity": "fleet chassis steel" }
+]

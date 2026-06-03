@@ -1,0 +1,32 @@
+[
+  {
+    "doc_id": "D001",
+    "company_id": "C001",
+    "source": "SEC EDGAR 10-K / Sustainability Report",
+    "text": "Helios Renewable Energy generates 91 percent of revenue from solar and wind assets. The company reports net-zero scope 1 and 2 emissions and aligns capital expenditure with the EU Taxonomy climate mitigation objective. Board oversight of climate risk is formalised through a dedicated sustainability committee."
+  },
+  {
+    "doc_id": "D002",
+    "company_id": "C002",
+    "source": "SEC EDGAR 10-K / CSRD Filing",
+    "text": "Northwind Logistics operates a diesel-heavy road freight fleet and retains material fossil fuel exposure. The company has committed to fleet electrification by 2030 but currently sources road haulage from Delta Freight Carriers, whose emissions exceed sector benchmarks. A mandatory CSRD disclosure was filed late this year."
+  },
+  {
+    "doc_id": "D003",
+    "company_id": "C003",
+    "source": "SEC EDGAR 10-K / Supplier Disclosure",
+    "text": "Meridian Semiconductors assembles circuit boards through Pacific Circuit Assembly and sources tantalum and cobalt upstream from Kivu Minerals. The company acknowledges conflict-mineral due-diligence obligations under Dodd-Frank Section 1502 and is strengthening supplier audits across tier-1 and tier-2 vendors."
+  },
+  {
+    "doc_id": "D004",
+    "company_id": "C004",
+    "source": "SEC EDGAR 10-K / Sustainability Report",
+    "text": "Verdant Foods Group sources soy and palm derivatives from Greenfield Agro Supply and maintains a deforestation-free sourcing policy. The company promotes 58 percent sustainable investment alignment and publishes Scope 3 agricultural emissions in line with GRI standards."
+  },
+  {
+    "doc_id": "D005",
+    "company_id": "C005",
+    "source": "SEC EDGAR 10-K / Regulator Filing",
+    "text": "Atlas Heavy Industries retains high fossil fuel exposure and recently exceeded permitted NOx emissions at its flagship plant. It procures structural steel from Summit Steelworks, currently under antitrust review, and specialty alloys upstream from Kivu Minerals. Governance reforms are described as in progress."
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "EV001",
+    "company_id": "S101",
+    "date": "2026-02-11",
+    "category": "Social",
+    "subcategory": "Conflict Minerals",
+    "severity": 5,
+    "headline": "Kivu Minerals linked to conflict-mineral sourcing in artisanal mines",
+    "source": "Controversy Monitor / NGO Report"
+  },
+  {
+    "id": "EV002",
+    "company_id": "S101",
+    "date": "2026-03-04",
+    "category": "Environmental",
+    "subcategory": "Water Pollution",
+    "severity": 4,
+    "headline": "Tailings discharge contaminates local watershed near Kivu operations",
+    "source": "Controversy Monitor / Local News"
+  },
+  {
+    "id": "EV003",
+    "company_id": "S102",
+    "date": "2026-01-22",
+    "category": "Social",
+    "subcategory": "Labor Rights",
+    "severity": 3,
+    "headline": "Pacific Circuit Assembly cited for excessive overtime at two plants",
+    "source": "Controversy Monitor / Labor Audit"
+  },
+  {
+    "id": "EV004",
+    "company_id": "C005",
+    "date": "2026-02-28",
+    "category": "Environmental",
+    "subcategory": "Emissions",
+    "severity": 4,
+    "headline": "Atlas Heavy Industries exceeds permitted NOx emissions at flagship plant",
+    "source": "Controversy Monitor / Regulator Filing"
+  },
+  {
+    "id": "EV005",
+    "company_id": "S105",
+    "date": "2026-03-19",
+    "category": "Governance",
+    "subcategory": "Anti-Competition",
+    "severity": 3,
+    "headline": "Summit Steelworks under antitrust review over regional price coordination",
+    "source": "Controversy Monitor / Press"
+  },
+  {
+    "id": "EV006",
+    "company_id": "S103",
+    "date": "2026-04-02",
+    "category": "Environmental",
+    "subcategory": "Emissions",
+    "severity": 2,
+    "headline": "Delta Freight Carriers fleet emissions above sector benchmark",
+    "source": "Controversy Monitor / Dataset"
+  },
+  {
+    "id": "EV007",
+    "company_id": "C002",
+    "date": "2026-04-15",
+    "category": "Governance",
+    "subcategory": "Disclosure",
+    "severity": 2,
+    "headline": "Northwind Logistics late on mandatory CSRD sustainability disclosure",
+    "source": "Controversy Monitor / Regulator Filing"
+  }
+]
