@@ -17,7 +17,7 @@ from src.engine import ESGEngine  # noqa: E402
 
 def main() -> None:
     print("=" * 70)
-    print("DS-03 ESG INTELLIGENCE — BATCH PIPELINE")
+    print("AUTONOMOUS ESG INTELLIGENCE PLATFORM — BATCH PIPELINE")
     print("=" * 70)
 
     engine = ESGEngine()

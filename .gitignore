@@ -6,3 +6,5 @@ venv/
 env/
 *.egg-info/
 .ipynb_checkpoints/
+
+SAMPLE_README.md

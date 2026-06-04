@@ -9,8 +9,10 @@ The FastAPI app holds one shared :class:`ESGEngine` so the graph is built once.
 """
 from __future__ import annotations
 
+from typing import Any
+
 from .compliance.sfdr import classify_sfdr
-from .crawlers import loader
+from .crawlers import aws_s3, loader
 from .graph.knowledge_graph import build_graph, propagate_supply_chain_risk
 from .graphrag.retriever import GraphRAGRetriever
 from .llm.narrative import generate_narrative
@@ -59,6 +61,33 @@ class ESGEngine:
             "sfdr": sfdr,
             "narrative": narrative,
         }
+
+    # -- curated output artifacts ---------------------------------------------
+    def build_outputs(self) -> dict[str, Any]:
+        """Assemble the curated result artifacts produced by a full run.
+
+        These are the platform's outputs (portfolio scores, per-company ESG
+        profiles, knowledge-graph stats) — the things worth persisting to the
+        data lake's curated layer.
+        """
+        profiles = [self.company_profile(cid) for cid in self.companies]
+        return {
+            "portfolio_scores.json": self.portfolio_scores(),
+            "company_profiles.json": [p for p in profiles if p],
+            "graph_stats.json": {
+                "nodes": self.graph.number_of_nodes(),
+                "edges": self.graph.number_of_edges(),
+            },
+        }
+
+    def export_results_to_s3(self) -> list[str]:
+        """Write the curated result artifacts back to the S3 data lake.
+
+        Closes the AWS loop: raw data is read from ``s3://<bucket>/data/raw`` and
+        results are written to ``s3://<bucket>/data/curated`` (override the prefix
+        with ``ESG_S3_OUTPUT_PREFIX``).
+        """
+        return [aws_s3.write_json(name, data) for name, data in self.build_outputs().items()]
 
     # -- GraphRAG query --------------------------------------------------------
     def query(self, question: str, top_k: int = 3) -> dict:
